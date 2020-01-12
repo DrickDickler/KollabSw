@@ -61,7 +61,13 @@ function sonne(x_pos,y_pos){
     ctx.beginPath();
     ctx.arc(300+x_pos, 35+y_pos,30,0,360);
     ctx.strokeStyle ="white";
-    var image = new Image();
+    var img = new Image();
+    img.onload=function(){
+        ctx.drawImage(this,0,0,img.width,img.height);
+    }
+    img.src="./bild.jpg";
+
+    });
     image.src = 'paket.png';
         ctx.fillStyle ="orange";
     ctx.fill();
