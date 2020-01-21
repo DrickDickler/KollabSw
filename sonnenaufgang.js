@@ -63,7 +63,7 @@ function sonne(x_pos,y_pos){
     ctx.strokeStyle ="white";
     var image = new Image();
     image.src = 'paket.png';
-        ctx.fillStyle ="yellow";
+        ctx.fillStyle ="red";
     ctx.fill();
     ctx.stroke();
 
